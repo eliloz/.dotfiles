@@ -70,6 +70,15 @@ return {
       vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
     end
 
+    vim.diagnostic.config({
+      virtual_text = false,
+      severity_sort = true,
+      float = {
+        border = "rounded",
+        source = "always",
+      },
+    })
+
     -- configure html server
     lspconfig["html"].setup({
       capabilities = capabilities,
