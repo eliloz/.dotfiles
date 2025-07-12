@@ -41,6 +41,7 @@ return {
           "dockerfile",
           "gitignore",
           "query",
+          "vimdoc",
           "python",
           "c",
           "rust",
