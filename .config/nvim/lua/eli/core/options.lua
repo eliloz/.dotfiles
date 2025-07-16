@@ -26,6 +26,8 @@ vim.opt.signcolumn = "yes"
 vim.opt.isfname:append("@-@")
 
 vim.opt.updatetime = 50
-vim.opt.completeopt = { "menuone", "noselect" }
+--vim.opt.completeopt = { "menuone", "noselect" }
+vim.opt.completeopt = { "menu", "menuone", "noselect", "noinsert", "fuzzy" }
+vim.opt.winborder = "rounded"
 
 vim.g.mapleader = " "
